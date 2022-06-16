@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(102, 175, 235 ,1)0%, rgba(57, 49, 168 ,1), rgba(32, 9, 126 ,1)100%);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    border: 2px solid #fff;
+}
+
+.titulo {
+    font-style: italic;
+    /* text-decoration: underline; */
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.titulo:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border-color: #fff;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+.containerInterno {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+    
+}
+
+.escrevaAqui {
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 50px;
+    /* width: 300px; */
+    min-width: 300px;
+
+}
+
+.escrevaAqui input {
+    flex: 3;    
+    font-size: 1rem;
+    border: 2px solid rgba(102, 175, 235 ,1);  
+    font-weight: 300;
+    padding: 2px;
+    text-align: start;
+}
+
+.escrevaAqui input:focus {
+    outline: none;
+    border-color: rgba(102, 175, 235 ,1);
+}
+
+
+button {
+    padding-left: 10px;
+    flex: 1;
+    border-radius: 3px; 
+    font-weight: 500;   
+    height: 100%;
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: rgba(57, 49, 168 ,1);
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#containerTarefas {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    min-height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    padding-bottom: 20px;   
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
+
+  
